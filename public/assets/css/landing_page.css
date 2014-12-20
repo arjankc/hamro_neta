@@ -1,0 +1,328 @@
+/* cooked by _heisenberg */
+
+/*
+	External CSS : Eric Mayer CSS Reset v2.0
+	_________________________________________
+	http://meyerweb.com/eric/tools/css/reset/
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed,
+	figure, figcaption, footer, header, hgroup,
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure,
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+/** Font Face **/
+@font-face {
+    font-family: 'segoeui';
+    src: url('../fonts/segoeui.eot');
+    src: url('../fonts/segoeui.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/segoeui.woff') format('woff'),
+         url('../fonts/segoeui.ttf') format('truetype'),
+         url('../fonts/segoeui.svg#RobotoBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'segoeuib';
+    src: url('../fonts/segoeuib.eot');
+    src: url('../fonts/segoeuib.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/segoeuib.woff') format('woff'),
+         url('../fonts/segoeuib.ttf') format('truetype'),
+         url('../fonts/segoeuib.svg#RobotoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'segoeuil';
+    src: url('../fonts/segoeuil.eot');
+    src: url('../fonts/segoeuil.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/segoeuil.woff') format('woff'),
+         url('../fonts/segoeuil.ttf') format('truetype'),
+         url('../fonts/segoeuil.svg#RobotoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** Float Classes **/
+
+.floatLeft {
+	float:left;
+}
+
+.floatRight {
+	float:right;
+}
+
+.clearBoth {
+	clear:both;
+}
+
+
+/* Basic CSS*/
+
+body {
+    background:#f7f7f7;
+    margin:0;
+    padding:0;
+    font-family: Calibri, Arial, sans;
+    font-size:14px;
+    line-height:20px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    color:#000;
+}
+
+	a {
+	    color: #ea1c1c;
+	    text-decoration: none;
+	}
+
+	a:hover {
+	    text-decoration: underline;
+	}
+
+	h1 {
+	    font-family: Georgia;
+	    font-size: 47px;
+	    color:#2e2e2e;
+	    line-height: normal;
+	    padding: 0px 0px 20px 0px;
+	    margin: 0px 0px 20px 0px;
+	    display: block;
+	    text-align: center;
+	    background: url(../images/separator.png) bottom center no-repeat;
+	}
+
+/* Structure */
+#wrapper {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+	#header {
+		width: 100%;
+		height: 642px;
+		margin: 0 auto;
+		background: url(../images/cover.jpg) top center no-repeat fixed;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+	}
+		#topbar {
+			width: 100%;
+			height: 47px;
+			background: url(../images/whitebar.png) top left repeat-x;
+		}
+			#topbar ul{
+				width: 1100px;
+				margin: 0 auto;
+				text-align: right;
+				padding: 14px 0px 0px 0px;
+				font-size: 14px;
+			}
+				#topbar ul li{
+					display: inline-block;
+					color: #525252;
+				}
+					#topbar ul li a{
+						color: #525252;
+					}
+						#topbar ul li a:after{
+							content: '|';
+						}
+						#topbar ul li:last-child a:after{
+							content: '';
+						}
+		#cover {
+			width: 1100px;
+			margin: 0 auto;
+			padding: 30px 0px 0px 0px;
+		}
+			#logo_quote {
+				width: 595px;
+			}
+				#logo_quote img{
+					margin: 0px 0px 50px 0px;
+				}
+				#quote {
+					width: 520px;
+					text-align: center;
+					background: url(../images/quote_box.png) top left no-repeat;
+					height: 200px;
+					padding: 0px 25px 0px 50px;
+					font-family: Georgia;
+					font-size: 27px;
+					color: #090909;
+					line-height: 40px;
+				}
+					#quote span{
+						color: #f41011;
+						font-style: italic;
+						font-size: 24px;
+						padding: 15px 0px 0px 0px;
+						display: block;
+					}
+			#login_div {
+				text-align: center;
+				width: 374px;
+				height: 454px;
+				background: url(../images/bg_box.png) top left no-repeat;
+				padding: 25px 25px 33px 20px;
+			}
+				#tabs {
+					visibility: hidden;
+				}
+
+				#login_div a#visit{
+					color: #329bd6;
+					font-size: 17px;
+					text-decoration: underline;
+				}
+					#login_div a#visit:hover{
+						text-decoration: none;
+					}
+
+				#login_div form{
+					padding: 20px 0px 0px 0px;
+				}
+
+				#login_div input[type=text], #login_div input[type=password]{
+					width: 355px;
+					font-size: 20px;
+					padding: 10px;
+					border: 1px solid #dbdbdb;
+					margin: 0px 0px 10px 0px;
+					outline: none;
+				}
+					#login_div input[type=text]:focus, #login_div input[type=password]:focus{
+						box-shadow: 0px 0px 5px #96cfff;
+						border: 1px solid #65b5f8;
+					}
+				#login_div input[type=submit]{
+					width: 332px;
+					height: 65px;
+					margin: 20px auto;
+					border: none;
+					outline: none;
+					text-indent: -99999px;
+					background: none;
+				}
+					#login_div input[type=submit]#register{
+						background: url(../images/getstared.png) top left no-repeat;
+					}
+					#login_div input[type=submit]#login{
+						background: url(../images/login.png) top left no-repeat;
+					}
+	#container {
+		width: 100%;
+		padding: 45px 0px 45px 0px;
+		text-align: center;
+		font-size: 22px;
+		font-family: Georgia;
+		line-height: 35px;
+	}
+		#container p{
+			width: 855px;
+			margin: 0 auto;
+		}
+
+		#sectionOne {
+			width: 100%;
+			height: 280px;
+			padding: 0px 0px 90px 0px;
+			background: url(../images/topshed.jpg) bottom left repeat-x;
+		}
+		#sectionTwo {
+			width: 100%;
+			padding: 30px 0px 90px 0px;
+			height: 280px;
+			background: #fff url(../images/bottomshed.jpg) bottom left repeat-x;
+		}
+		#sectionThree {
+			width: 100%;
+
+			padding: 30px 0px 0px 0px;
+		}
+			#chartsection {
+				width: 1000px;
+				margin: 40px auto 20px auto;
+			}
+
+	#footer {
+		width: 100%;
+		background: #fff;
+		padding: 20px 0px 20px 0px;
+	}
+		#footer p{
+			width: 1100px;
+			margin: 0 auto;
+		}
+
+.scrollup{
+    width:40px;
+    height:40px;
+    position:fixed;
+    bottom:80px;
+    right:20px;
+    display:none;
+    background:url(../images/icon_top.png) no-repeat;
+    padding: 0px 0px 0px 50px;
+}
+
+#message {
+	width:100%;
+	background:#1c1c1c;
+	color:#fff;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+	border-bottom: 1px solid #fff;
+	text-transform: uppercase;
+}
+
+#trackCode {
+	display:none;
+}
